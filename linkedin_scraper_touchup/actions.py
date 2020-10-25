@@ -25,5 +25,6 @@ def login(driver, email=None, password=None):
   password_elem = driver.find_element_by_id("password")
   password_elem.send_keys(password)
   driver.find_element_by_tag_name("button").click()
+  driver.find_element_by_class_name('btn__primary--large').click() #debug: this is george's line to click the login button
 
   element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "profile-nav-item")))

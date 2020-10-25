@@ -8,7 +8,7 @@ here = path.abspath(path.dirname(__file__))
 
 version = re.search(
     '^__version__\s*=\s*"(.*)"',
-    open('linkedin_scraper/__init__.py').read(),
+    open('linkedin_scraper_touchup/__init__.py').read(),
     re.M
     ).group(1)
 

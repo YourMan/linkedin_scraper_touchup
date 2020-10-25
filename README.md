@@ -5,16 +5,7 @@ Scrapes Linkedin User Data
 ## Installation
 
 ```bash
-pip3 install --user linkedin_scraper
-```
-
-Version **2.0.0** and before is called `linkedin_user_scraper` and can be installed via `pip3 install --user linkedin_user_scraper`
-
-## Setup
-First, you must set your chromedriver location by
-
-```bash
-export CHROMEDRIVER=~/chromedriver
+pip install git+https://github.com/YourMan/linkedin_scraper_touchup.git
 ```
 
 ## Usage
@@ -188,34 +179,6 @@ company = Company("https://ca.linkedin.com/company/google", driver=driver)
 
 ### `scrape(close_on_complete=True)`
 This is the meat of the code, where execution of this function scrapes the company. If *close_on_complete* is True (which it is by default), then the browser will close upon completion. If scraping of other companies are desired, then you might want to set that to false so you can keep using the same driver.
-
-    
-## Versions
-**2.4.0**
-* Added `actions` for login
-
-**2.3.1**
-* Fixed bugs
-
-**2.2.x**
-* Scraping employees allowed
-
-**2.1.x**
-* Scraping allowed after logged in
-
-**2.0.x**
-* Modified the way the objects are called
-* Added Company
-* Changed name from `linkedin_user_scraper` to `linkedin_scraper`
-
-**1.2.x**
-* Allows scraping later
-
-**1.1.x**
-* Addes additional API where user can use their own webdriver
-
-**1.0.x**
-* first publish and fixes
 
 ## Contribution
 
